@@ -11,7 +11,7 @@
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 import './shared-styles.js';
 
-class MyView1 extends PolymerElement {
+class ClubInfoView extends PolymerElement {
   static get template() {
     return html`
       <style include="shared-styles">
@@ -24,17 +24,17 @@ class MyView1 extends PolymerElement {
 
       <div class="card">
         <div class="circle">1</div>
-        <h1>View One</h1>
-        <p>Ut labores minimum atomorum pro. Laudem tibique ut has.</p>
+        <h1>Informacion del club</h1>
+        <p>En este club hacemos cosas</p>
         <p>
-          Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit
-          elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi
-          periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo
-          eripuit sit.
+          Esta es una lista de cosas que hacemos en este club:
+            <p>La cerámica de Talavera no es cosa menor, dicho de otra manera, es cosa mayor</p>
+            <p>La segunda ya tal</p>
+            <p>Fin de la cita</p>
         </p>
       </div>
     `;
   }
 }
 
-window.customElements.define('my-view1', MyView1);
+window.customElements.define('club-info-viwu', ClubInfoView);
